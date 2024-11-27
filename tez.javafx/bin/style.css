@@ -1,0 +1,13 @@
+/* Default button style */
+.default-button {
+    -fx-background-color:#66DB34;
+    -fx-text-fill: white;
+    -fx-background-radius: 30 30 30 30;
+}
+
+/* Toggled button style */
+.toggled-button {   
+    -fx-background-color: #D8202C;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-radius: 30 30 30 30;
+}

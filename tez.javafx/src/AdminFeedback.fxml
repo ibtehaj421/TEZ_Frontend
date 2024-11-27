@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminFeedbackController">
+   <children>
+      <ImageView fitHeight="382.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/images/AdminRnC.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="responseTable" layoutX="11.0" layoutY="63.0" prefHeight="297.0" prefWidth="126.0">
+        <columns>
+          <TableColumn fx:id="feedbackTable" prefWidth="125.60001220703126" text="Feedbacks" />
+        </columns>
+      </TableView>
+      <Label fx:id="displayFeedback" alignment="TOP_LEFT" layoutX="167.0" layoutY="83.0" prefHeight="228.0" prefWidth="446.0" wrapText="true" />
+      <Button fx:id="removeBtn" layoutX="488.0" layoutY="331.0" mnemonicParsing="false" onAction="#removeBtnClicked" opacity="0.0" prefHeight="34.0" prefWidth="146.0" text="Button" />
+      <Button fx:id="homeBtn" layoutX="10.0" layoutY="6.0" mnemonicParsing="false" onAction="#homeBtnClicked" opacity="0.0" prefHeight="42.0" prefWidth="42.0" text="Button" />
+   </children>
+</AnchorPane>

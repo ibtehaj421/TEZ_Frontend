@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busPassController">
+   <children>
+      <ImageView fitHeight="379.0" fitWidth="649.0" layoutX="-5.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="./images/PassengerBusPass.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="orgLabel" alignment="CENTER" layoutX="53.0" layoutY="145.0" prefHeight="20.0" prefWidth="125.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" alignment="CENTER" layoutX="52.0" layoutY="168.0" prefHeight="18.0" prefWidth="126.0" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="330.0" text="ISSUED :" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="116.0" layoutY="330.0" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Circle fx:id="activeTab" fill="#30ff1f" layoutX="70.0" layoutY="64.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button fx:id="homeBtn" layoutX="7.0" layoutY="5.0" mnemonicParsing="false" onAction="#homeBtnClicked" opacity="0.0" prefHeight="46.0" prefWidth="44.0" text="Button" />
+      <Button fx:id="payBtn" alignment="CENTER" layoutX="392.0" layoutY="124.0" mnemonicParsing="false" onAction="#payBtnClicked" prefHeight="46.0" prefWidth="118.0" style="-fx-background-radius: 10000; -fx-background-color: black;" text="PAY" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="genPassBtn" alignment="CENTER" layoutX="380.0" layoutY="234.0" mnemonicParsing="false" onAction="#genPassBtn" prefHeight="38.0" prefWidth="159.0" style="-fx-background-radius: 10000; -fx-background-color: black;" text="GENERATE PASS" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="orgDropDown" layoutX="343.0" layoutY="187.0" prefHeight="37.0" prefWidth="216.0" promptText="ORGANIZATION" style="-fx-background-color: white; -fx-background-radius: 100;" />
+      <Button fx:id="logoutBtn" layoutX="604.0" layoutY="10.0" mnemonicParsing="false" onAction="#logoutBtnClicked" opacity="0.0" prefHeight="26.0" prefWidth="26.0" text="Button" />
+   </children>
+</AnchorPane>

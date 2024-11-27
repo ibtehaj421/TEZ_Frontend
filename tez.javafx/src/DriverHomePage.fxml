@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DriverHomePageController">
+   <children>
+      <ImageView fitHeight="379.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/images/DriverHomePage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutBtn" layoutX="602.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutBtnClicked" opacity="0.0" prefHeight="26.0" prefWidth="15.0" text="Button" />
+      <Button fx:id="allocationBtn" layoutX="10.0" layoutY="163.0" mnemonicParsing="false" onAction="#allocationBtnClicked" opacity="0.0" prefHeight="47.0" prefWidth="302.0" text="Button" />
+      <Button fx:id="seatBtn" layoutX="328.0" layoutY="163.0" mnemonicParsing="false" onAction="#seatBtnClicked" opacity="0.0" prefHeight="47.0" prefWidth="302.0" text="Button" />
+      <Button fx:id="reportBtn" layoutX="169.0" layoutY="252.0" mnemonicParsing="false" onAction="#reportBtnClicked" opacity="0.0" prefHeight="47.0" prefWidth="302.0" text="Button" />
+   </children>
+</AnchorPane>
